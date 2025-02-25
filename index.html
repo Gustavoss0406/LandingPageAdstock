@@ -271,17 +271,20 @@
                  style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%);">
             </div>
           </div>
-          <div class="relative overflow-hidden bg-white rounded-2xl">
-            <video class="w-full h-auto rounded-xl video-crop"
-                   src="imagens/Demo_Adstock.mp4"
-                   autoplay 
-                   muted 
-                   playsinline 
-                   loop
-                   onclick="this.muted = !this.muted;">
-              Seu navegador não suporta vídeo.
-            </video>
-          </div>
+            <div class="relative overflow-hidden bg-white rounded-2xl">
+              <!-- Vídeo em 720p, com poster e controles -->
+              <video
+                class="w-full h-auto rounded-xl video-crop"
+                src="imagens/Demo_Adstock.mp4"  <!-- Novo arquivo em 720p -->
+                muted
+                playsinline
+                loop
+                controls                         <!-- Exibe os controles nativos do player -->
+                poster="imagens/poster.png"      <!-- Imagem de pré-visualização (opcional) -->
+                onclick="this.muted = !this.muted">
+                Seu navegador não suporta vídeo.
+              </video>
+            </div>
         </div>
       </div>
     </div>
