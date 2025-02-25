@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Landingfolio Template #61b5c30d86328e8557b61aab.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Landingfolio Template #61b5c30d86328e8557b61aab.html"
+    }
+  ]
+}
